@@ -4,6 +4,7 @@ struct Table
 {
     int n;
     int m;
+    int a[10][10];
     int i;
     int j;
     int z;
@@ -14,14 +15,14 @@ struct Table
 int main ()
 {
     Table A1;
-    cout << "Entroduit le nombre de colonne et arrow";
+    cout << "Entroduit le nombre de colonne et arrow pour table 2";
     cout <<endl  << "n= ";
     cin >> A1.n;
     cout <<endl << "m= ";
     cin >> A1.m;
         //____________________________________________________
         Table A2;
-        cout << "Entroduit le nombre de colonne et arrow";
+        cout << "Entroduit le nombre de colonne et arrow pour table 2 ";
         cout <<endl << "n= ";
         cin >> A2.n;
         cout <<endl << "m= ";
@@ -32,7 +33,7 @@ int main ()
     {
         for( A1.j = 0; A1.j < A1.m; A1.j++)
         A1.z = rand() %100;
-    cout <<A1.z  <<"  ";
+    cout << A1.a[A1.i][A1.j]  <<"  ";
     cout << endl;
     }
     //____________________________________________________
@@ -41,10 +42,10 @@ int main ()
     {
         for( A2.j = 0; A2.j < A2.m; A2.j++)
         A2.z = rand() %100;
-    cout << A2.z <<"  ";
+    cout <<A2.z  <<"  ";
     cout << endl;
     }
     for (A1.j = 0; A1.j < A1.m; A1.j++)
-    A1.some = A1.some + A1.z;
+    A1.some = A1.some + A1.m;
     cout <<A1.some;
 }
