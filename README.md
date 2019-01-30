@@ -1,2 +1,0 @@
-# aghermanHP
-JSON files

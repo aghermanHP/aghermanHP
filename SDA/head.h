@@ -1,8 +1,15 @@
-#define head
-namespace H
+#ifndef HEAD
+#define HEAD
+
+struct Table 
 {
-    struct Table
-    {
-        int m, n;
-    };
-}
+    int n;
+    int m;
+    int a[10][10];
+    int i;
+    int j;
+    int z;
+    int some;
+    
+};
+#endif
