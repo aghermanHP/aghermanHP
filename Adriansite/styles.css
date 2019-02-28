@@ -14,10 +14,7 @@ button {
 }
 h1 {
 	color: #4CAF50;
-	background: #9b3e3e5d;
-	padding: 15px;
-	margin-right: 35%;
-	margin-left: 35%; 
+	text-decoration-style: solid; 
 }
 .module-border-wrap {
 	border: 4px;
