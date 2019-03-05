@@ -22,8 +22,9 @@ h1 {
 	border-style: double;
 	border-radius: 25px;
 	padding: 15px;
-	margin-left: absolute;
-	margin-right: absolute;
+	margin-left: 8%;
+	margin-right: 8%;
+	grid-row: 1/3;
   }
   .dropdown {
 	position: relative;
