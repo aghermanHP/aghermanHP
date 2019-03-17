@@ -121,7 +121,16 @@ div>div{
 	height: 150px;
 	width: 150px;
 }
-body{
+.home-body{
 	background: lightblue url("index.jpeg") no-repeat fixed center ;
 	background-size: 100%; 
 }
+.cazare-body{
+	background-color: white;
+	background-size: 100%;
+}
+.waterfall{
+	background-image: url('waterfall.jpg');
+    background-repeat: no-repeat;
+	background-position: center; 
+}	
