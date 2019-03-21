@@ -125,15 +125,19 @@ div>div{
 	width: 150px;
 }
 .home-body{
-	background: lightblue url("index.jpeg") no-repeat fixed center ;
+	background: lightblue url("foto/index.jpeg") no-repeat fixed center ;
 	background-size: 100%; 
+	max-width: 100%;
+	height: auto;
 }
 .cazare-body{
 	background-color: white;
 	background-size: 100%;
 }
 .waterfall{
-	background-image: url('waterfall.jpg');
+	background-image: url('foto/waterfall.jpg');
+	max-width: 100%;
+  	height: auto;
     background-repeat: no-repeat;
 	background-position: center; 
 	position: fixed;
