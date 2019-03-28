@@ -1,66 +1,43 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h2>Link catre Paginile e facebook al studentilor</h2>
     <ul>
       <li>
         <a
-          href="https://vuejs.org"
+          href="https://www.facebook.com/adrian.gherman1997"
           target="_blank"
         >
-          Core Docs
+          Gherman Adrian
         </a>
       </li>
       <li>
         <a
-          href="https://forum.vuejs.org"
+          href="https://www.facebook.com/ion.guidea.98"
           target="_blank"
         >
-          Forum
+          Guidea Ion
         </a>
       </li>
-      <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
-          Community Chat
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
-          Twitter
-        </a>
-      </li>
+      
       <br>
+    </ul>
+    <h2> Bibliographie pour cette presentation</h2>
+    <ul>
+      <li>
+        <a
+          href="http://francophonie.utm.md/stud_info/tw/lista_subiecte_2019.pdf"
+          target="_blank"
+        >
+          Sarcina
+        </a>
+      </li>
       <li>
         <a
           href="http://vuejs-templates.github.io/webpack/"
           target="_blank"
         >
-          Docs for This Template
-        </a>
-      </li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
-          vue-router
-        </a>
-      </li>
-      <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
-          vuex
+          Comment j'ai installe
         </a>
       </li>
       <li>
@@ -88,7 +65,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Bonjour a tous'
     }
   }
 }
