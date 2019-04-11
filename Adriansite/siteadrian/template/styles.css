@@ -148,9 +148,12 @@ align-content: center;
 	border-radius: 25px;
 }
 */
-div > h3{
+div > p{
 	position: relative;
 	background: #8c5ac5;
-	border-radius: 3px;
-
+	padding:32px;
+	border-radius: 25px;
+	cursor: pointer;
+	display: inherit;
+	font-size: 19px;
 }
