@@ -48,6 +48,11 @@
         </a>
       </li>
     </ul>
+    <ul>
+      <li v-for="product in products">
+      {{product}}
+      </li>
+      </ul>
   </div>
 </template>
 
@@ -56,7 +61,10 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Bonjour a tous'
+      msg: 'Bonjour a tous',
+      products: ['paine',
+      'lapte',
+      'tigari']
     }
   }
 }
