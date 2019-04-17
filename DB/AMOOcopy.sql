@@ -1,20 +1,44 @@
-CREATE TABLE Packets (PacketsId INT PRIMARY KEY, Transport VARCHAR(60), Hebergment VARCHAR(60),
-       Alimentation VARCHAR(60), Assurance VARCHAR(60), Divertisment VARCHAR(60), Pay VARCHAR(60),
-       Ville VARCHAR(60));
+	CREATE TABLE Packets (
+	PacketsId INT PRIMARY KEY,
+	Transport VARCHAR(60),
+	Hebergment VARCHAR(60),
+	Alimentation VARCHAR(60),
+	Assurance VARCHAR(60),
+	Divertisment VARCHAR(60),
+	Pay VARCHAR(60),
+	Ville VARCHAR(60));
        
-	CREATE TABLE Suport (SuportId INT PRIMARY KEY, SuportTransport VARCHAR(60),
-    SuportHebergement VARCHAR(60), SuportAlimentation VARCHAR(60), SuportDivertisment VARCHAR(60));
+CREATE TABLE Suport(
+    SuportId INT PRIMARY KEY, 
+    SuportTransport VARCHAR(60),
+    SuportHebergement VARCHAR(60),
+    SuportAlimentation VARCHAR(60),
+    SuportDivertisment VARCHAR(60));
        
-		CREATE TABLE Payment (PaymentId INT PRIMARY KEY, Cache bool, Card bool, Terminal bool, 
-        Transfer bool, Somme int);
+CREATE TABLE Payment(
+	PaymentId INT PRIMARY KEY,
+    Cache bool,
+    Card bool,
+    Terminal bool, 
+    Transfer bool,
+    Somme int);
        
-	CREATE TABLE Utilisateur (UtilisateurId INT PRIMARY KEY, NommeUtilisateur VARCHAR (60),
-    PrenommeUtilisateur VARCHAR (60),Username VARCHAR (60), MotDePasse VARCHAR (60), Rolle bool);
+CREATE TABLE Utilisateur(UtilisateurId INT PRIMARY KEY,
+    NommeUtilisateur VARCHAR (60),
+    PrenommeUtilisateur VARCHAR (60),
+    Username VARCHAR (60),
+    MotDePasse VARCHAR (60), Rolle bool);
        
-CREATE TABLE Employe (EployeId INT PRIMARY KEY, Directeur VARCHAR (60), ManagerSuperior VARCHAR (60),
-       ManagerPacket VARCHAR (60), Suport VARCHAR (60));
+CREATE TABLE Employe(
+	EployeId INT PRIMARY KEY,
+    Directeur VARCHAR (60),
+    ManagerSuperior VARCHAR (60),
+	ManagerPacket VARCHAR (60),
+	Suport VARCHAR (60));
        
-	CREATE TABLE Evaluation (EvaluationId INT PRIMARY KEY, MessageEvaluation TEXT);
+CREATE TABLE Evaluation(
+	EvaluationId INT PRIMARY KEY,
+    MessageEvaluation TEXT);
     
     #insert dans le table Packets__________________________________________________________________________
     
@@ -54,5 +78,58 @@ CREATE TABLE Employe (EployeId INT PRIMARY KEY, Directeur VARCHAR (60), ManagerS
     INSERT INTO Payment Values (2, false, true, false, false, 1200);
     INSERT INTO Payment Values (3, false, false, true, false, 1300);
     INSERT INTO Payment Values (4, false, false, false, true, 10000);
+	#--------------------------------------------------------------------------------------------------------
+    
+	# create table Packets_Utilisateur_____________________________________________________________________
+    
+    CREATE TABLE Packets_Utilisateur(
+    PacketId INT,
+    UtilisateurId INT,
+    FOREIGN KEY (PacketId) REFERENCES Packets (PacketId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (UtilisateurId) REFERENCES Utilisateur (UtilisateurId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    PRIMARY KEY (PacketId,
+    UtilisateurId));
+	#--------------------------------------------------------------------------------------------------------
+    
+    #CREATE TABLE Packets_Payment___________________________________________________________________________________________
+    CREATE TABLE Packets_Payment(
+    PacketId INT,
+    PaymentId INT,
+    FOREIGN KEY (PacketId) REFERENCES Packets (PacketId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (PaymentId) REFERENCES Payment (PaymentId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    PRIMARY KEY (PacketId,PaymentId));
+    #--------------------------------------------------------------------------------------------------------
+    
+    #CREATE TABLE Packets_Employe___________________________________________________________________________________________
+	CREATE TABLE Packets_Employe (
+	PacketId INT,
+    EmployeId INT,
+    FOREIGN KEY (PacketId) REFERENCES Packets (PacketId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (EmployeId) REFERENCES Employe (EmployeId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    PRIMARY KEY (PacketId,EmployeId)
+    );
+     #--------------------------------------------------------------------------------------------------------
+     
+     #CREATE TABLE Suport_Employe___________________________________________________________________________
+     CREATE TABLE Suport_Employe (
+	SuportId  INT,
+    EmployeId INT,
+    FOREIGN KEY (SuportId ) REFERENCES Suport (SuportId ) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (EmployeId) REFERENCES Employe (EmployeId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    PRIMARY KEY (SuportId , EmployeId)
+    );
+    #________________________________________________________________________________________________________
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    #select from Packets
+
+    
     
     
