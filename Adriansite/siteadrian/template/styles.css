@@ -2,50 +2,35 @@
 	color: teal;
 	text-align: center;	
 }
-button {
+
+.dropdown {
+	position: relative;
+	display: inline-block;
 	align-content: center;
-	background : #8c5ac5;
+	background : transparent;
 	color : rgb(16, 16, 58);
-	padding : 2% 3%;
+	padding : 5px 10px;
 	color: white;
 	text-align : center;
-	display : inline-flex;	
 	border-radius: 25px;
 }
 
-.dropdown {
-	align-content: center;
-	background : #8c5ac5;
-	color : rgb(16, 16, 58);
-	padding : 2% 3%;
-	color: white;
-	text-align : center;
-	display : inline-flex;	
-	border-radius: 25px;
-	margin-block-start: 2%;
-	}
-.flex-container {
-  display: flex;
-}
 .image-camere{
-	margin-left: 3%;
-	margin-right: 5%;
-	width: 600px;
-	height: 400px;
+		max-width: 100%;
+		height: auto;
 }
+
 .h1 {
 	color: #4CAF50;
 	text-decoration-style: solid;
-	padding: 60px, 30px;
 }
+
 .module-border-wrap {
 	border: 4px;
 	border-color: #4CAF50;
 	border-style: double;
 	border-radius: 25px;
 	padding: 15px;
-	margin-left: absolute;
-	margin-right: absolute;
   }
   
 .span {
@@ -56,21 +41,21 @@ button {
 	display : inline-flex;
 	border-radius: 25px;
 }
+
 .spantextcolor{
 	color: white;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgba(103, 153, 153, 0.699);
-  min-width: 25%;
+  align-content: center;
+  background-color: rgb(48, 196, 196);
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 25% 25%;
-  z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+	display: block;
 }
 	
 form {
@@ -78,41 +63,40 @@ form {
 	border-block-end-color: #4CAF50;
 	border-block-start-color: #8c5ac5;
 }
-article{
+
+.border{
 	border-left-color: #4CAF50;
 	border-right-color: white;
 	border-bottom-color: #4CAF50;
 	border-top-color: white;
 	border-style: dotted; 
-	margin-left: 7%;
-	margin-right: 7%;
 }
+
 aside{
 	background-color: #8c5ac5;
 	margin-left: auto;
 	display: block;
 }
-div>div{
-	margin-right: 5%;
-	text-decoration: underline ;
-	text-decoration-style: arial;
-	text-decoration-color: red;
-	color: green;
-}
+
 .image-div{
 	height: 150px;
 	width: 150px;
 }
+
 .home-body{
 	background: lightblue url("foto/index.jpeg") no-repeat fixed center ;
 	background-size: 100%; 
 	max-width: 100%;
 	height: auto;
 }
+
 .cazare-body{
 	background-color: white;
-	background-size: 100%;
+	background-size: 100%; 
+	max-width: 100%;
+	height: auto;
 }
+
 .waterfall{
 	background-image: url('foto/waterfall.jpg');
 	max-width: 100%;
@@ -126,34 +110,66 @@ div>div{
 
 }	
 
-/*.button-dropdown{
-	align-content: center;
-	background : #8c5ac5;
-	color : rgb(16, 16, 58);
-	padding: 15% 100%;
-	color: white; 	
-	display : inline-table;
-	font-size : 16px;
-	border-radius: 25px;
-}  
-.button-dropdownn{
-align-content: center;
-	background : #8c5ac5;
-	color : rgb(16, 16, 58);
-	padding : 5.5% 14%;
-	color: white;
-	text-align : center;
-	display : inline-table;
-	font-size : 150%;
-	border-radius: 25px;
-}
-*/
 div > p{
 	position: relative;
 	background: #8c5ac5;
-	padding:32px;
+	padding:3px;
 	border-radius: 25px;
 	cursor: pointer;
 	display: inherit;
-	font-size: 19px;
+	font-size: 14px;
+	color: aliceblue;
 }
+
+/*button______________________________________________________________*/
+
+button {
+	align-content: center;
+	background : #8c5ac5;
+	color : rgb(16, 16, 58);
+	padding : 20px 30px;
+	color: white;
+	text-align : center;
+	border-radius: 25px;
+}
+button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*button group______________________________*/
+.buton-group button {
+	background-color: #8c5ac5; 
+	border: 1px solid #300641; 
+	color: white; 
+	cursor: pointer; 
+	float: left; 
+	border-radius: 0%;
+	width: 33.3333%;
+	font-size: auto; 
+  }
+  
+  .buton-group button:not(:last-child) {
+	border-right: none; 
+  }
+  
+  
+  .buton-group:after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .buton-group button:hover {
+	background-color: #59097294;
+  }
+  /*button end_________________________________________________________________________________*/
+
+  /*- - - - - - - - - - - - - - - - - - - -- - - - - - - - - - - - - - - - - - - - - - - -- - */
+
+  /* Divuri ^^ containere____________________________________________________________________*/
+  .backcazare{
+	  background-image: url('../images/backk.jpg');
+	  background-size: 100%;
+	  position: flex-start;
+	  background-position: flex-start;
+	  align-content: flex-start
+  }
