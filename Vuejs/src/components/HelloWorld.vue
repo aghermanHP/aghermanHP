@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="hello" >
     <h1>{{ msg }}</h1>
     <h2>Nous avons plaisi de fair cette presentation</h2>
     <ul>
@@ -49,7 +49,7 @@
       </li>
     </ul>
     <ul>
-      <li v-for="product in products">
+      <li v -for="product in products">
       {{product}}
       </li>
       </ul>
@@ -58,13 +58,11 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'Hello',
   data () {
     return {
       msg: 'Bonjour a tous',
-      products: ['paine',
-      'lapte',
-      'tigari']
+      products: ['paine', 'lapte', 'tigari']
     }
   }
 }

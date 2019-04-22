@@ -6,16 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="template/styles.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="/template/main.js"></script>
+    <script type="text/javascript" src="template/main.js"></script>
 </head>
         <body class="home-body">
                 <div class="buton-group">
-                        <button onclick="window.location.href='pages/Servicii.html'" class="col-sm-2, col-md-2">Servicii Hanul Nucului</button>
-                        <button onclick="window.location.href='pages/Visitatori.html'" class="col-sm-2, col-md-2">Vizitatori Hanul Nucului</button>
-                        <button onclick="window.location.href='pages/Cazare.html'" class="col-sm-2, col-md-2">Cazare Hanul Nucului</button>
+                        <button onclick="window.location.href='pages/Servicii.html'" class="col-sm-2, col-md-4">Servicii Hanul Nucului</button>
+                        <button onclick="window.location.href='pages/Visitatori.html'" class="col-sm-2, col-md-4">Vizitatori Hanul Nucului</button>
+                        <button onclick="window.location.href='pages/Cazare.html'" class="col-sm-2, col-md-4">Cazare Hanul Nucului</button>
                       </div> 
             <br style = "line-height:2;"><br>
-            <div class="clock"> Moldova </div>
-            <p id="demo"> test </p>
+            <div class="jsdropdown">
+                <button onclick="myFunction()" class="jsdropbtn">Dropdown</button>
+                <div id="DropdownMenu" class="jsdropdown-content">
+                  <a href="pages/Cazare.html">Cazare</a>
+                  <a href="pages/Servicii.html">Servicii</a>
+                  <a href="pages/Visitatori.html">Visitatori</a>
+                </div>
+              </div>
         </body>
 </html>

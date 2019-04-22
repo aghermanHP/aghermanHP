@@ -93,11 +93,11 @@ CREATE TABLE Evaluation(
     
     #CREATE TABLE Packets_Payment___________________________________________________________________________________________
     CREATE TABLE Packets_Payment(
-    PacketId INT,
+    PacketsId INT,
     PaymentId INT,
-    FOREIGN KEY (PacketId) REFERENCES Packets (PacketId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    FOREIGN KEY (PacketsId) REFERENCES Packets (PacketsId) ON DELETE RESTRICT ON UPDATE CASCADE,
     FOREIGN KEY (PaymentId) REFERENCES Payment (PaymentId) ON DELETE RESTRICT ON UPDATE CASCADE,
-    PRIMARY KEY (PacketId,PaymentId));
+    PRIMARY KEY (PacketsId,PaymentId));
     #--------------------------------------------------------------------------------------------------------
     
     #CREATE TABLE Packets_Employe___________________________________________________________________________________________
@@ -119,14 +119,14 @@ CREATE TABLE Evaluation(
     PRIMARY KEY (SuportId , EmployeId)
     );
     #________________________________________________________________________________________________________
-    
-     
-    
-    
-    
-    
-    
-    
+    	#CREATE TABLE Packets_Suport
+    CREATE TABLE Packets_Suport (
+    PacketsId INT,
+    SuportId INT,
+    FOREIGN KEY (PacketsId) REFERENCES Packets (PacketsId) ON DELETE RESTRICT ON UPDATE CASCADE, 
+    FOREIGN KEY (SuportId) REFERENCES Suport (SuportId) ON DELETE RESTRICT ON UPDATE CASCADE,
+    PRIMARY KEY (PacketsId, SuportId));
+    #_________________________________________________________________________________________________________
     
     #select from Packets
 
