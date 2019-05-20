@@ -3,62 +3,83 @@
 <HEAD>
 <link rel="icon" href="../images/adrian.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="../template/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../template/main.js"></script>
 <Title>
 Pensiunea Hanul Nucului</Title>
 <HEAD>
-<BODY class="cazare-body">
-<center class="">
+<BODY onload="startTime()">
+
+		<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="../HanulNucului.html">About</a>
+				<a href="./Cazare.html">Cazare</a>
+				<a href="./Pricelist.html">Pricelist</a>
+				<a href="./Servicii.html">Sevicii</a>
+				<a href="./Visitatori.html">Vizitatori</a>
+			  </div>
+		<nav class="navbar navbar-light" style="background-color: rgb(38, 97, 107);">
+				<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+				<a align="left" href="../HanulNucului.html">
+					<img width="150px"  src="../images/logoo.png">
+				</a>	
+				<div id="myclock"></div>
+                	<div class="header-right"> 
+                  		<a href="./Servicii.html" class="xxxxxx col-md-2">Servicii</a>|
+				  		<a href="./Visitatori.html" class="xxxxxx col-md-2">Visitatori</a>|
+				  		<a href="./Cazare.html" class="xxxxxx col-md-2">Cazare</a>
+               	 </div>
+              </nav> 
 		<h1>Hanul Nucului va pune la dispozitie urmatoarele tipuri de camere</h1>
-	<center class="module-border-wrap">
-		<button class="" onclick = "window.location.href='../HanulNucului.html'"> Acasa Hanul Nucului </button>
-			<button class="" onclick = "window.location.href='Servicii.html'"> Servicii Hanul Nucului</button>
-				<button class="" onclick = "window.location.href='Visitatori.html'"> Visitatori Hanul Nucului</button>
-	</center>
-</center>
 
 <br styles="line-height:1;"> <br>
 
-<div class="container">
-	<div class="col-sm-8, col-md-8">
-<img  src="../images/singlestandartt.jpg" class="image-camere" alt="Responsive image"> 
-</div>
-<div class = "col-sm-4, col-md-4" styles="font-size: 22px">Chambre single standart unne incroiable chambre au prix minimale
-	votre sejour perfect est garante, caera confortabila, pentru spatele dumneavoastra<br><br> <image src="../images/99.jpg">
+	<div class=row>
+		<div class="col-sm-8, col-md-8">
+			<img  src="../images/singlestandartt.jpg" class="image-camere" alt="Responsive image"> 
+		</div>
+				<div class = "col-sm-4, col-md-4"><p>Chambre single standart unne incroiable chambre au prix minimale
+					votre sejour perfect est garante, caera confortabila, pentru spatele dumneavoastra </p> <br><br> <image src="../images/99.jpg">
+				</div>
 	</div>
-</div>
-	
+
 	<br styles = "line-height:2;" class=" col-sm-12, col-md-12"><br>
 
-	<div class="container">
+	<div class="row">
 		<div class="col-sm-8, col-md-8">
 <img src="../images/single.jpg" class="image-camere" > </div>
-<div class = "col-sm-4, col-md-4" styles="font-size: 22px"> Chambre  Single business pour une sejour de travail ou pour un + de 
-	confort dans votre voiage, fiecre dintre noi trebuie sa se odihneasca bine asta este ocazia voastra, nu ezitati <br styles = "line-height:2;"><br> <image class="image-div" src="../images/120.jpg"> 
+<div class = "col-sm-4, col-md-4"> <p> Chambre  Single business pour une sejour de travail ou pour un + de 
+	confort dans votre voiage, fiecre dintre noi trebuie sa se odihneasca bine asta este ocazia voastra, nu ezitati </p> <br styles = "line-height:2;"><br> <image class="image-div" src="../images/120.jpg"> 
 	</div>
 </div>
 	
 <br styles = "line-height:2;" class=" col-sm-12, col-md-12"><br>
 
-	<div class="container">
+	<div class="row">
 		<div class="col-sm-8, col-md-8">
 <img src="../images/twiin.jpg" class="image-camere" > </div>
-<div class = "col-sm-4, col-md-4" styles="font-size: 22px"> Chambre  dooble standardunne incroiable chambre au prix minimale,
+<div class = "col-sm-4, col-md-4"> <p>Chambre  dooble standardunne incroiable chambre au prix minimale,
 	votre sejour perfect est garante   xxxxx xxxxxx xxxsdssa fdsgrfgfd hgrtew ssgyer gretr grey geref wrweg
-	fdgsj shgjgfj fhgfsghug huyjhyd fdgsfdsbjgd fiecare dintre noi ar vrea o astfel de camera sa ea. <br styles = "line-height:2;"><br> <image class="image-div" src="../images/200.png"> 
+	fdgsj shgjgfj fhgfsghug huyjhyd fdgsfdsbjgd fiecare dintre noi ar vrea o astfel de camera sa ea. </p> <br styles = "line-height:2;"><br> <image class="image-div" src="../images/200.png"> 
 	</div>
 </div>
+		<br style = "line-height:3;"><br>
 		
-			<br style = "line-height:3;"><br>
-		<form class="col-md-12" action="HanulNucului.html"method="post">
-		<div class="col-md-3, col-sm-4"> Nume:<input type="text" name="nume"></div>
-		<div class="col-md-3, col-sm-4"> Prenume:<input  type="text" name="prenume"> </div>
-		<div class="col-md-3, col-sm-4"> Contact:<input  type="text" name="contact"> </div><br><br>
-			<input type="submit" value="Trimite"><input type="reset" value="Sterge">
-	</form> 
+		<form class="row " name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+			<div class="col-md-3, col-sm-4"> Nume:<input style="width:75%"  type="text" name="nume"/></div>
+			<div class="col-md-3, col-sm-4"> Prenume:<input style="width:75%" type="text" name="prenume"/> </div>
+			<div class="col-md-3, col-sm-4"> Contact:<input style="width:75%" type="text" name="contact"/> </div>
+		<br>
+			<div style="align-items: center" class="col-md-12">
+				<button type="submit" class="btn btn-primary  col-md-3 col-sm-4">Trimite</button>
+				<button type="reset" class="btn btn-primary  col-md-3 col-sm-4">Sterge</button>
+			</div>
+		</form>
+		 
 	<br style=" line-height: 3;"> <br>
-
-	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </BODY>
 </HTML>

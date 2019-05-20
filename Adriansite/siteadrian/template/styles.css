@@ -1,18 +1,14 @@
 * {
-	color: teal;
+	color: black;
 	text-align: center;	
 }
-
-.dropdown {
-	position: relative;
-	display: inline-block;
-	align-content: center;
-	background : transparent;
-	color : rgb(16, 16, 58);
-	padding : 5px 10px;
+.xxxxxx{
 	color: white;
-	text-align : center;
-	border-radius: 25px;
+	font-size: 18px;
+
+}
+.xxxxxx:hover{
+	color: rgba(255, 57, 7, 0.925);
 }
 
 .image-camere{
@@ -24,60 +20,9 @@
 	color: #4CAF50;
 	text-decoration-style: solid;
 }
-
-.module-border-wrap {
-	border: 4px;
-	border-color: #4CAF50;
-	border-style: double;
-	border-radius: 25px;
-	padding: 15px;
-  }
-  
-.span {
-	align-content: center;
-	background : #8c5ac5;
-	color : white;
-	padding : 2% 3%;
-	display : inline-flex;
-	border-radius: 25px;
+p {
+	color: black;
 }
-
-.spantextcolor{
-	color: white;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  align-content: center;
-  background-color: rgb(48, 196, 196);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-	
-form {
-	border-bottom-color: aqua;
-	border-block-end-color: #4CAF50;
-	border-block-start-color: #8c5ac5;
-}
-
-.border{
-	border-left-color: #4CAF50;
-	border-right-color: white;
-	border-bottom-color: #4CAF50;
-	border-top-color: white;
-	border-style: dotted; 
-}
-
-aside{
-	background-color: #8c5ac5;
-	margin-left: auto;
-	display: block;
-}
-
 .image-div{
 	height: 150px;
 	width: 150px;
@@ -89,38 +34,6 @@ aside{
 	max-width: 100%;
 	height: auto;
 }
-
-.cazare-body{
-	background-color: white;
-	background-size: 100%; 
-	max-width: 100%;
-	height: auto;
-}
-
-.waterfall{
-	background-image: url('foto/waterfall.jpg');
-	max-width: 100%;
-  	height: auto;
-    background-repeat: no-repeat;
-	background-position: center; 
-	position: fixed;
-    right: 0;
-    left: 0;
-	top: 0;
-
-}	
-
-div > p{
-	position: relative;
-	background: #8c5ac5;
-	padding:3px;
-	border-radius: 25px;
-	cursor: pointer;
-	display: inherit;
-	font-size: 14px;
-	color: aliceblue;
-}
-
 /*button______________________________________________________________*/
 
 button {
@@ -207,3 +120,98 @@ background-color: rgb(28, 55, 129);
 	  background-color: rgb(74, 76, 197);
   }
   .show {display: block;}
+/*______________________________________________________*/
+.header {
+	overflow: hidden;
+	background-color: #f1f1f1;
+	padding: 20px 20px;
+  }
+  
+  /* Style the header links */
+  .header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+	background-color: dodgerblue;
+	color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+	float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+	.header a {
+	  float: none;
+	  display: block;
+	  text-align: left;
+	}
+	.header-right {
+	  float: none;
+	}
+  }
+  body {
+	font-family: "Lato", sans-serif;
+  }
+  
+  .sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(64, 29, 110);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+	color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
