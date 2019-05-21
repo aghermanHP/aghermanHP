@@ -1,13 +1,7 @@
 * {
 	color: black;
-<<<<<<< HEAD
-	text-align: center;	
-	box-sizing:border-box
-}
-=======
 	text-align: center;
 	box-sizing: border-box;}
->>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 .xxxxxx{
 	color: white;
 	font-size: 18px;
@@ -238,23 +232,6 @@ body {
 @media screen and (max-height: 450px) {
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
-<<<<<<< HEAD
-	}
-	
-
-	/*----------------------------------*/
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-=======
 }
 /*___________________slider_____________________________*/
 
@@ -267,24 +244,10 @@ img {vertical-align: middle;}
 	max-width: 1000px;
 	position: relative;
 	margin: auto;
->>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 }
 
 /* Next & previous buttons */
 .prev, .next {
-<<<<<<< HEAD
-  cursor: pointer;
-	position: relative;
-	align-items: flex-start;
-  width: auto;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-=======
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -297,40 +260,16 @@ img {vertical-align: middle;}
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
->>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 }
 
 /* Position the "next button" to the right */
 .next {
-<<<<<<< HEAD
-  right: 0;
-  border-radius: 3px 0 0 3px;
-=======
 	right: 0;
 	border-radius: 3px 0 0 3px;
->>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-<<<<<<< HEAD
-  background-color: rgba(0,0,0,0.8);
-}
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-=======
 	background-color: rgba(0,0,0,0.8);
 }
 
@@ -368,28 +307,10 @@ img {vertical-align: middle;}
 
 .active, .dot:hover {
 	background-color: #717171;
->>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 }
 
 /* Fading animation */
 .fade {
-<<<<<<< HEAD
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-=======
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 1.5s;
 	animation-name: fade;
@@ -415,5 +336,5 @@ img {vertical-align: middle;}
 	bottom: 0;
 	background-color: #26616b;
 	text-align: center;
+	width: 100%
 }
->>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
