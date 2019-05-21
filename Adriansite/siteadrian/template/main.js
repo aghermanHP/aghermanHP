@@ -13,8 +13,13 @@ function startTime() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('myclock').innerHTML =
+<<<<<<< HEAD
   h + ":" + m + ":" + s;
   var t = setTimeout(startTime, 5000);
+=======
+      h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+>>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 }
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
@@ -36,16 +41,26 @@ function validateForm() {
     return false;
   }
 }
+<<<<<<< HEAD
 //----------------------------------------------------------------
 var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
+=======
+// ________________________________________slider
+var slideIndex = 1;
+showSlides(slideIndex);
+
+>>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
+<<<<<<< HEAD
 // Thumbnail image controls
+=======
+>>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -57,6 +72,7 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
+<<<<<<< HEAD
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
@@ -65,3 +81,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+=======
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+document.getElementById('year').appendChild(document.createTextNode(new Date().getFullYear()));
+>>>>>>> cf905c342b154c29e6d2fdaefbba2a6d4c231c9c
