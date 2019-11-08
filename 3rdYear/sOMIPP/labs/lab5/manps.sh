@@ -1,0 +1,1 @@
+man ps >psdescription.txt
