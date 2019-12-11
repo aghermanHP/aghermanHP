@@ -17,17 +17,17 @@ CREATE TABLE Suport(
        
 CREATE TABLE Payment(
 	PaymentId INT PRIMARY KEY,
-    Cache bool,
-    Card bool,
-    Terminal bool, 
-    Transfer bool,
+    Cache int,
+    Card int,
+    Terminal int, 
+    Transfer int,
     Somme int);
        
 CREATE TABLE Utilisateur(UtilisateurId INT PRIMARY KEY,
     NommeUtilisateur VARCHAR (60),
     PrenommeUtilisateur VARCHAR (60),
     Username VARCHAR (60),
-    MotDePasse VARCHAR (60), Rolle bool);
+    MotDePasse VARCHAR (60), Rolle int);
        
 CREATE TABLE Employe(
 	EployeId INT PRIMARY KEY,
@@ -40,47 +40,46 @@ CREATE TABLE Evaluation(
 	EvaluationId INT PRIMARY KEY,
     MessageEvaluation TEXT);
     
-    #insert dans le table Packets__________________________________________________________________________
     
-    INSERT INTO Packets  VALUES (1, "Avia", "Hotel", "Restaurant", "Grave carate", "Excursion", "Moldova", "Chisinau");
-    INSERT INTO Packets  VALUES (2, "Train", "Pensune", "Restaurant", "ASITO", "Excursion", "Moldova", "Orheiul Vechi");
-    INSERT INTO Packets  VALUES (3, "Voiture", "Hotel", "Restaurant", "Grave carate", "Escalade", "Romania", "Brasov");
-    INSERT INTO Packets  VALUES (4, "Avia", "Motel", "Restaurant", "MoldAsig", "Excursion", "Ukraina", "Odesa");
-    #---------------------------------------------------------------------------------------------------------
+    INSERT INTO Packets  VALUES (1, 'Avia', 'Hotel', 'Restaurant', 'Grave carate', 'Excursion', 'Moldova', 'Chisinau');
+    INSERT INTO Packets  VALUES (2, 'Train', 'Pensune', 'Restaurant', 'ASITO', 'Excursion', 'Moldova', 'Orheiul Vechi');
+    INSERT INTO Packets  VALUES (3, 'Voiture', 'Hotel', 'Restaurant', 'Grave carate', 'Escalade', 'Romania', 'Brasov');
+    INSERT INTO Packets  VALUES (4, 'Avia', 'Motel', 'Restaurant', 'MoldAsig', 'Excursion', 'Ukraina', 'Odesa');
+    ---------------------------------------------------------------------------------------------------------
     
-    #insert dans le table Suport__________________________________________________________________________
-    INSERT INTO Suport VALUES (1, "Ionita Vasilie", "", "", "");
-    INSERT INTO Suport VALUES (2, "", "Doru Vasilache", "", "");
-    INSERT INTO Suport VALUES (3, "", "", "Ion Prepelit", "");
-    INSERT INTO Suport VALUES (4, "", "", "", "Urecheatu Vladimir");
-    #----------------------------------------------------------------------------------------------------------
+    --#insert dans le table Suport__________________________________________________________________________
+    INSERT INTO Suport VALUES (1, 'Ionita Vasilie', '', '', '');
+    INSERT INTO Suport VALUES (2, '', 'Doru Vasilache', '', '');
+    INSERT INTO Suport VALUES (3, '', '', 'Ion Prepelit', '');
+    INSERT INTO Suport VALUES (4, '', '', '', 'Urecheatu Vladimir');
+    --#----------------------------------------------------------------------------------------------------------
     
-    #insert dans le table Utilisateur______________________________________________________________
-    INSERT INTO Utilisateur VALUES (1, "Doru", "Vasilache", "Dory56", "XXXXXXX", true);
-    INSERT INTO Utilisateur VALUES (2, "Ionita", "Vasilie", "Ion69", "XXXXXXXX", true);
-    INSERT INTO Utilisateur VALUES (3, "Ion", "Prepelita", "Prep56", "XXXXXXXXX", true);
-    INSERT INTO Utilisateur VALUES (4, "Vladimir", "Urecheatu", "Vlad75", "XXXXXXXXXX", true);
-    INSERT INTO Utilisateur VALUES (5, "Radu", "Putin", "Radu56", "YYY", false);
-    INSERT INTO Utilisateur VALUES (6, "Roman", "Calos", "Calos56", "YYYY", false);
-    #------------------------------------------------------------------------------------------------------------
-    #insert dans le table Employe
-    INSERT INTO Employe VALUES (1, "Vladimir Putin", "", "", "");
-    INSERT INTO Employe VALUES (2, "", "Igor Dodon", "", "");
-    INSERT INTO Employe VALUES (3, "", "", "Vlad Filat", "");
-    INSERT INTO Employe VALUES (4, "", "", "", "Doru Vasilache");
-    INSERT INTO Employe VALUES (5, "", "", "", "Vasile Ionita");
-    INSERT INTO Employe VALUES (6, "", "", "", "Ion Perepelita");
-    INSERT INTO Employe VALUES (7, "", "", "", "Vladimir Urecheatu");
-    #--------------------------------------------------------------------------------------------------------
+    --#insert dans le table Utilisateur______________________________________________________________
+    INSERT INTO Utilisateur VALUES (1, 'Doru', 'Vasilache', 'Dory56', 'XXXXXXX', 1);
+    INSERT INTO Utilisateur VALUES (2, 'Ionita', 'Vasilie', 'Ion69', 'XXXXXXXX', 1);
+    INSERT INTO Utilisateur VALUES (3, 'Ion', 'Prepelita', 'Prep56', 'XXXXXXXXX', 1);
+    INSERT INTO Utilisateur VALUES (4, 'Vladimir', 'Urecheatu', 'Vlad75', 'XXXXXXXXXX', 1);
+    INSERT INTO Utilisateur VALUES (5, 'Radu', 'Putin', 'Radu56', 'YYY', 0);
+    INSERT INTO Utilisateur VALUES (6, 'Roman', 'Calos', 'Calos56', 'YYYY', 0);
+    --#------------------------------------------------------------------------------------------------------------
+    --#insert dans le table Employe
+    INSERT INTO Employe VALUES (1, 'Vladimir Putin', '', '', '');
+    INSERT INTO Employe VALUES (2, '', 'Igor Dodon', '', '');
+    INSERT INTO Employe VALUES (3, '', '', 'Vlad Filat', '');
+    INSERT INTO Employe VALUES (4, '', '', '', 'Doru Vasilache');
+    INSERT INTO Employe VALUES (5, '', '', '', 'Vasile Ionita');
+    INSERT INTO Employe VALUES (6, '', '', '', 'Ion Perepelita');
+    INSERT INTO Employe VALUES (7, '', '', '', 'Vladimir Urecheatu');
+    --#--------------------------------------------------------------------------------------------------------
     
-    #insert dans le table Payment
-    INSERT INTO Payment Values (1, true, false, false, false, 10000);
-    INSERT INTO Payment Values (2, false, true, false, false, 1200);
-    INSERT INTO Payment Values (3, false, false, true, false, 1300);
-    INSERT INTO Payment Values (4, false, false, false, true, 10000);
-	#--------------------------------------------------------------------------------------------------------
+    --#insert dans le table Payment
+    INSERT INTO Payment Values (1, 1, 0, 0, 0, 10000);
+    INSERT INTO Payment Values (2, 0, 1, 0, 0, 1200);
+    INSERT INTO Payment Values (3, 0, 0, 1, 0, 1300);
+    INSERT INTO Payment Values (4, 0, 0, 0, 1, 10000);
+	--#--------------------------------------------------------------------------------------------------------
     
-	# create table Packets_Utilisateur_____________________________________________________________________
+	--# create table Packets_Utilisateur_____________________________________________________________________
     
     CREATE TABLE Packets_Utilisateur(
     PacketId INT,
@@ -128,8 +127,7 @@ CREATE TABLE Evaluation(
     PRIMARY KEY (PacketsId, SuportId));
     #_________________________________________________________________________________________________________
     
-    #select from Packets
-
+	select * from Packets
     
     
     
